@@ -15,6 +15,11 @@ python3 run.py
 ```
 
 ## Testing
+1. Export flask app
+```
+export FLASK_APP=flask-test.py
+```
+2. Start testing
 ```
 flask test
 ```
