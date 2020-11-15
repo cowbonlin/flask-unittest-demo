@@ -1,6 +1,7 @@
+import os
 from app import create_app
 
-app = create_app('default')
+app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 
 @app.cli.command()
 def test():
